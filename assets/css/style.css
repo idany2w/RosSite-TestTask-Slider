@@ -1,0 +1,253 @@
+/********************************/
+/*.container{
+	border: black 1px solid;
+}
+
+.row{
+	border: green 1px solid
+}
+
+div[class*="col-"]{
+	border: red 1px solid
+}*/
+/********************************/
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000;
+}
+
+.carousel.myslider .carousel-item{
+	background-size: cover;
+    background-position: 36%;
+	background-repeat: no-repeat;
+}
+
+.carousel.myslider .carousel-inner .container{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%
+}
+
+.myslider .h1,
+.myslider  h1 {
+	font-size: 2.625rem;
+	margin-bottom: 	0px
+}
+.myslider .carousel-inner p{
+	font-size: 1.625rem;
+	margin-bottom: 0px
+}
+
+.myslider .btn{
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	border-radius: 3px;
+}
+.myslider .btn.primary{
+	margin-right: 20px;
+}
+.myslider .btn.primary,
+.myslider .btn-outline-dark:hover,
+.myslider .btn-outline-dark:focus{
+	background-color: rgb(255, 137, 30);
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 137, 30);
+}
+.btn-outline-dark {
+	color: #000;
+	border-color: #000
+}
+
+.myslider .carousel-control-next,
+.myslider .carousel-control-prev{
+	width: 76px;
+	height: 85px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px;
+	opacity: 1;
+}
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='43.9632mm' height='75.3888mm' version='1.1' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' image-rendering='optimizeQuality' fill-rule='evenodd' clip-rule='evenodd' viewBox='0 0 4396.34 7538.91' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'> <g id='%D0%A1%D0%BB%D0%BE%D0%B9_x0020_1'> <metadata id='CorelCorpID_0Corel-Layer'/> <g id='_1226797447776'> <path fill='white' fill-rule='nonzero' d='M1352.04 3769.49l2968.79 -2968.74c50.32,-50.35 75.51,-108.29 75.51,-173.75 0,-65.46 -25.16,-123.4 -75.51,-173.65l-377.75 -377.74c-50.37,-50.33 -108.29,-75.6 -173.59,-75.6 -65.48,0 -123.4,25.27 -173.75,75.59l-3520.28 3520.12c-50.35,50.35 -75.46,108.29 -75.46,173.75 0,65.48 25.11,123.4 75.46,173.75l3520.09 3520.12c50.43,50.43 108.4,75.59 173.86,75.59 65.38,0 123.3,-25.16 173.65,-75.59l377.75 -377.48c50.32,-50.35 75.43,-108.32 75.43,-173.83 0,-65.41 -25.08,-123.32 -75.43,-173.67l-2968.77 -2968.85z'/> </g> </g> </svg>");
+}
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='43.9632mm' height='75.3888mm' version='1.1' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' image-rendering='optimizeQuality' fill-rule='evenodd' clip-rule='evenodd' viewBox='0 0 4396.34 7538.91' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'> <g id='Слой_x0020_1'> <metadata id='CorelCorpID_0Corel-Layer'/> <g id='_1226950999776'> <path fill='white' fill-rule='nonzero' d='M3044.3 3769.49l-2968.79 -2968.74c-50.32,-50.35 -75.51,-108.29 -75.51,-173.75 0,-65.46 25.16,-123.4 75.51,-173.65l377.75 -377.74c50.37,-50.33 108.29,-75.6 173.59,-75.6 65.48,0 123.4,25.27 173.75,75.59l3520.28 3520.12c50.35,50.35 75.46,108.29 75.46,173.75 0,65.48 -25.11,123.4 -75.46,173.75l-3520.09 3520.12c-50.43,50.43 -108.4,75.59 -173.86,75.59 -65.38,0 -123.3,-25.16 -173.65,-75.59l-377.75 -377.48c-50.32,-50.35 -75.43,-108.32 -75.43,-173.83 0,-65.41 25.08,-123.32 75.43,-173.67l2968.77 -2968.85z'/> </g> </g> </svg>");
+}
+@media (max-width: 767.98px){
+	.carousel.myslider .carousel-item{
+		min-height: 400px;
+	}
+	.carousel-inner{
+		text-align: center;
+	}
+
+	.myslider .carousel-indicators li{
+		width: 14px;
+		height: 14px;
+		border-radius: 100px;
+		border: #282828 1px solid;
+		background: transparent;
+		padding: 0px
+	}
+	.myslider .carousel-indicators li.active{
+		background:#282828;
+	}
+
+	.myslider .carousel-inner .h1,
+	.myslider .carousel-inner h1 {
+		font-size: 1.56rem;
+		text-align: center;
+	}
+	.myslider .carousel-inner p{
+		font-size: 	1.125rem;
+		line-height: 1.875rem;
+	}
+	.myslider .btn{
+		margin-top: 20px;
+		padding: 10px 25px;
+		font-size: 0.8125rem;
+	}
+}
+@media (min-width: 768px){
+	.container {
+		max-width: 972px;
+	}
+	.carousel.myslider .carousel-item{
+		min-height: 675px;
+	}
+	.carousel.myslide .carousel-item{
+		background-position-x: 36%;
+	}
+	.myslider .h1,
+	.myslider  h1 {
+		font-size: 2.185rem;
+	}
+	.myslider .carousel-inner p{
+		font-size: 	1.375rem;
+		line-height: 2.625rem
+	}
+
+	.myslider .btn{
+		text-transform: uppercase;
+		line-height: 0.9375rem;
+		text-align: center;
+		font-size: 0.8125rem;
+		padding: 10px 25px;
+		border-radius: 3px;
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	.myslider .btn.primary{
+		margin-right: 20px;
+	}
+	/*- Indicators -*/
+		.myslider-indicators{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+			z-index: 15
+		}
+		.myslider-indicators .carousel-indicators{
+			position: static;
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+		.myslider-indicators .carousel-indicators .active {
+			background-color: transparent;
+		}
+
+		.myslider .carousel-indicators li{
+			position: static;
+			flex: auto;
+			width: 100%;
+			height: auto;
+			text-indent: 0;
+			margin: 0;
+			background: transparent;
+		}
+		.myslider .carousel-indicators li:before,
+		.myslider .carousel-indicators li:after{
+			display: none!important
+		}
+		.myslider-indicator{
+			display: flex;
+			align-items: center;
+			border-radius: 3px;
+			background-color: rgba(0, 0, 0, 0.15);
+			cursor: pointer;
+		}
+		.myslider-indicators .carousel-indicators .active .myslider-indicator{
+			background-color: rgba(0, 0, 0, 0.44);
+		}
+		.myslider-indicator-img{
+			display: block;
+			width: 40px;
+			height: 45px;
+			border-radius: 3px;
+			margin: 6px
+		}
+		.myslider-indicator-text{
+			text-shadow: 0px 1px 1px rgba(2, 2, 2, 0.2);
+			line-height: 1.2;
+			color: #fff;
+		}
+		.myslider-indicator-text h1.title{
+			font-size: 9px;
+			margin-bottom: 0px
+		}
+		.myslider-indicator-text p.subtitle{
+			font-size: 10px;
+			margin-bottom: 0px
+		}
+
+	/*---*/
+}
+@media (min-width: 1200px){
+	.container {
+		max-width: 1170px;
+	}
+
+	.carousel.myslider .carousel-item{
+		background-position: center;
+	}
+	.myslider .h1,
+	.myslider  h1 {
+		font-size: 2.625rem;
+	}
+	.myslider .btn{
+		font-size: 1rem;
+		padding: 15px 30px;
+		margin-bottom: 10px;
+		margin-top: 10px
+	}
+	.myslider-indicator-img{
+		width: 48px;
+		height: 55px;
+	}
+
+	.myslider .carousel-inner p{
+		font-size: 	1.625rem;
+		line-height: 3.125rem
+	}
+	.carousel.myslider .carousel-item{
+		background-position-x: center;
+	}
+	.myslider-indicator-text{
+		margin-left: 4px
+	}
+	.myslider-indicator-text h1.title{
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+	.myslider-indicator-text p.subtitle{
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
